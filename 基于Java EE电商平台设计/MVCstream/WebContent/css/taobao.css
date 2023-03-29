@@ -1,0 +1,70 @@
+#container{
+    width: 520px;
+    height: 280px;
+    margin: 100px auto;
+    overflow: hidden;/*注意*/
+    position: relative;
+}
+#list{
+    width: 3640px;
+    height: 280px;
+    position: absolute;
+}
+#list img{
+    width: 520px;
+    height: 280px;
+    float: left;
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFff;
+    border-radius: 3px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#prev{
+    left: 10px;
+}
+#next{
+    right: 10px;
+}
+.arrow:hover{
+    background-color:rgba(0, 0, 0, 0.7);;
+}
+#container:hover .arrow{
+    display: block;
+}
+
+
+#buttons{
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 20px;
+}
+
+#buttons span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+#buttons .on{
+    background-color: orangered;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script language =javascript >
+var curIndex=0;
+//时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
+var timeInterval=1000;
+var arr=new Array();
+arr[0]="photos/1.jpg";
+arr[1]="photos/2.jpg";
+arr[2]="photos/3.jpg";
+arr[3]="photos/4.jpg";
+arr[4]="photos/5.jpg";
+setInterval(changeImg,timeInterval);
+function changeImg()
+{
+    var obj=document.getElementById("obj");
+    if (curIndex==arr.length-1) 
+    {
+        curIndex=0;
+    }
+    else
+    {
+        curIndex+=1;
+    }
+    obj.src=arr[curIndex];
+}
+</script>
+<img id=obj src ="../images/bicycle.jpg" width=200 height=150 border =0>
+	</body>
+</html>

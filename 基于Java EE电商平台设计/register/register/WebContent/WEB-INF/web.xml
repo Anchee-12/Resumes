@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>register</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.etc.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  <servlet-name>LogoutServlet</servlet-name>
+  <servlet-class>com.etc.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LogoutServlet</servlet-name>
+  <url-pattern>/logout.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>RegisterServlet</servlet-name>
+  <servlet-class>com.etc.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RegisterServlet</servlet-name>
+  <url-pattern>/register.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>AddGroupServlet</servlet-name>
+  <servlet-class>com.etc.servlet.AddGroupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddGroupServlet</servlet-name>
+  <url-pattern>/addgroup.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>DeleteGroupServlet</servlet-name>
+  <servlet-class>com.etc.servlet.DeleteGroupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteGroupServlet</servlet-name>
+  <url-pattern>/deletegroup.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>UpdateGroupServlet</servlet-name>
+  <servlet-class>com.etc.servlet.UpdateGroupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateGroupServlet</servlet-name>
+  <url-pattern>/updategroup.do</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>EditorServlet</servlet-name>
+  <servlet-class>com.etc.servlet.EditorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>EditorServlet</servlet-name>
+  <url-pattern>/editor.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>SelectGroupServlet</servlet-name>
+  <servlet-class>com.etc.servlet.SelectGroupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SelectGroupServlet</servlet-name>
+  <url-pattern>/selectgroup.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>DeleteUserServlet</servlet-name>
+  <servlet-class>com.etc.servlet.DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteUserServlet</servlet-name>
+  <url-pattern>/deleteuser.do</url-pattern>
+  </servlet-mapping>
+</web-app>
